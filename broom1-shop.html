@@ -1,0 +1,546 @@
+,<g!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="robots" content="all,follow">
+    <meta name="googlebot" content="index,follow,snippet,archive">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Obaju e-commerce template">
+    <meta name="author" content="Ondrej Svestka | ondrejsvestka.cz">
+    <meta name="keywords" content="">
+
+    <title>
+        Swish and Click
+    </title>
+
+    <meta name="keywords" content="">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100' rel='stylesheet' type='text/css'>
+
+    <!-- styles -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+
+    <!-- theme stylesheet -->
+    <link href="css/style.default.css" rel="stylesheet" id="theme-stylesheet">
+
+    <!-- your stylesheet with modifications -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <script src="js/respond.min.js"></script>
+
+    <link rel="shortcut icon" href="favicon.png">
+
+
+
+</head>
+
+<body>
+    <!-- *** TOPBAR ***
+ _________________________________________________________ -->
+    <div id="top">
+        <div class="container">
+            
+            <div class="col-md-12" data-animate="fadeInDown">
+                <ul class="menu">
+                    <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a>
+                    </li>
+                    <li><a href="register.html">Register</a>
+                    </li>
+                    <li><a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--LOGIN MODAL -->
+        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="Login">Experience the World of Magic</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form action="customer-orders.html" method="post">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="email-modal" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="password-modal" placeholder="Password">
+                            </div>
+
+                            <p class="text-center">
+                                <button class="btn btn-primary"><i class="fa fa-sign-in"></i> Alohomora</button>
+                            </p>
+
+                        </form>
+
+                        <p class="text-center text-muted">No Hogwarts Letter yet?</p>
+                        <p class="text-center text-muted"><a href="register.html"><strong>Enroll now!</strong><br></a> Your are one click away&nbsp;from your Hogwarts Letter!</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- *** TOP BAR END *** -->
+
+    <!-- *** NAVBAR ***
+ _________________________________________________________ -->
+
+    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+        <div class="container">
+            <div class="navbar-header">
+
+                
+            </div>
+            <!--/.navbar-header -->
+
+            <div class="navbar-collapse collapse" id="navigation">
+
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="active"><a href="index.html">Home</a>
+                    </li>
+                    <li class="dropdown yamm-fw">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Diagon Alley <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <div class="yamm-content">
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <h5>Spell Ingridients</h5>
+                                            <ul>
+                                                <li><a href="apo-shop.html">Apothecary</a>
+                                                </li>
+                                                
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <h5>Wizarding Books</h5>
+                                            <ul>
+                                                <li><a href="book-shop.html">Flourish and Blotts</a>
+                                                </li>
+                                                
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <h5>Broomsticks</h5>
+                                            <ul>
+                                                <li><a href="broom1-shop.html">Broomstix</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <h5>Pets</h5>
+                                            <ul>
+                                                <li><a href="owl-shop.html">Eeylops' Owl Emporium.</a>
+                                                </li>
+                                                
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <h5>Wands</h5>
+                                            <ul>
+                                                <li><a href="wand-shop.html">Ollivander's</a>
+                                                </li>
+                                                
+                                            </ul>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.yamm-content -->
+                            </li>
+                        </ul>
+                    </li>
+
+        
+            </div>
+            <!--/.nav-collapse -->
+
+            <div class="navbar-buttons">
+
+                <div class="navbar-collapse collapse right" id="basket-overview">
+                    <a   class="btn btn-primary navbar-btn" onClick="Receipt()"><i class="fa fa-shopping-cart"></i><span class="hidden-sm"></span></a>
+                </div>
+                <!--/.nav-collapse -->
+
+                
+            </div>
+            <!--/.nav-collapse -->
+
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /#navbar -->
+
+    <!-- *** NAVBAR END *** -->
+
+    <div id="all">
+
+        <div id="content">
+            <div class="container">
+
+                <div class="col-md-12">
+
+                    <ul class="breadcrumb">
+                        <li><a href="#">Home</a>
+                        </li>
+                        <li>Broomstix</li>
+                    </ul>
+
+                    <div class="box">
+                        <h1>Broomstix</h1>
+                        <p> Broomsticks, also known as brooms, are one of the means employed by wizards and witches to transport themselves between locations. Their use in Great Britain and Ireland is regulated by the Ministry of Magic's Broom Regulatory Control.The earliest recorded use of the broomstick was in 962 in a German illustrated manuscript. Only wizards and witches appear to use broomsticks in the wizarding world. House-elves, for example, use Apparition. Broomsticks appear to have a bit of personality of their own, as they are able to respond to the simplest of commands, such as "Up!".</p>
+                    </div>
+
+                    
+
+                    <div class="row products">
+
+                        <div class="col-md-3 col-sm-4">
+                            <div class="product">
+                                <div class="flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                                <img src="img/broom/1.jpg" alt="" class="img-responsive">
+                                        </div>
+                                        <div class="back">
+                                                <img src="img/broom/1.jpg" alt="" class="img-responsive">
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="invisible">
+                                    <img src="img/broom/1.jpg" alt="" class="img-responsive">
+                                </a>
+                                <br>
+                                <div class="text">
+                                    <h3>Australian Flyabout 50</h3>
+                                    <p style="text-align: center">The Australian Flyabout 50 was a world-class racing broom, produced in Australia. The Australian National Quidditch team rode on Australian Flyabout 50s during the 422nd Quidditch World Cup matches, in 1994.</p>
+                                    <p class="price">$143.00</p>
+                                    <p>
+                                        <input style="margin-left: 15px" id="a1" name = "a1" type = "checkbox" onClick="Enable('a1', 'aq1')" > <input style="margin-left: 20px" id="aq1" name = "aq1" type = "number" disabled>
+                                    </p>
+                                </div>
+                                <!-- /.text -->
+                            </div>
+                            <!-- /.product -->
+                        </div>
+
+
+                         <div class="col-md-3 col-sm-4">
+                            <div class="product">
+                                <div class="flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                                <img src="img/broom/2.jpg" alt="" class="img-responsive">
+                                        </div>
+                                        <div class="back">
+                                                <img src="img/broom/2.jpg" alt="" class="img-responsive">
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="invisible">
+                                    <img src="img/broom/2.jpg" alt="" class="img-responsive">
+                                </a>
+                                <br>
+                                <div class="text">
+                                    <h3>Firebolt</h3>
+                                    <p style="text-align: center">The Firebolt is a world-class broomstick. It was the fastest at the time of its production, and was released in 1993. In time the Firebolt broomstick was used by the Bulgarian and Irish International Quidditch Teams.</p>
+                                    <p class="price">$153.00</p>
+                                    <p>
+                                        <input style="margin-left: 15px" id="a2" name = "a2" type = "checkbox" onClick="Enable('a2', 'aq2')" > <input style="margin-left: 20px" id="aq2" name = "aq2" type = "number" disabled>
+                                    </p>
+                                </div>
+                                <!-- /.text -->
+                            </div>
+                            <!-- /.product -->
+                        </div>
+
+                        <div class="col-md-3 col-sm-4">
+                            <div class="product">
+                                <div class="flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                                <img src="img/broom/3.jpg" alt="" class="img-responsive">
+                                        </div>
+                                        <div class="back">
+                                                <img src="img/broom/3.jpg" alt="" class="img-responsive">
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="invisible">
+                                    <img src="img/broom/3.jpg" alt="" class="img-responsive">
+                                </a>
+                                <br>
+                                <div class="text">
+                                    <h3>Nimbus 2000</h3>
+                                    <p style="text-align: center">The Nimbus 2000 was produced by the Nimbus Racing Broom Company as part of their successful line of racing brooms. Released in 1991, it was, at the time, the fastest broomstick in production. The Nimbus 2000 easily outperformed.</p>
+                                    <p class="price">$150.00</p>
+                                    <p>
+                                       <input style="margin-left: 15px" id="a3" name = "a3" type = "checkbox" onClick="Enable('a3', 'aq3')" > <input style="margin-left: 20px" id="aq3" name = "aq3" type = "number" disabled>
+                                    </p>
+                                </div>
+                                <!-- /.text -->
+                            </div>
+                            <!-- /.product -->
+                        </div>
+                       
+
+                       <div class="col-md-3 col-sm-4">
+                            <div class="product">
+                                <div class="flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                                <img src="img/broom/4.jpg" alt="" class="img-responsive">
+                                        </div>
+                                        <div class="back">
+                                                <img src="img/broom/4.jpg" alt="" class="img-responsive">
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="invisible">
+                                    <img src="img/broom/4.jpg" alt="" class="img-responsive">
+                                </a>
+                                <br>
+                                <div class="text">
+                                    <h3>Nimbus 2001</h3>
+                                    <p style="text-align: center">The Nimbus 2001 was produced by the Nimbus Racing Broom Company as part of their successful line of racing brooms. Released in August, 1992, it was faster than its predecessor, the Nimbus 2000. And became the faster broom ever.</p>
+                                    <p class="price">$150.00</p>
+                                    <p>
+                                        <input style="margin-left: 15px" id="a4" name = "a4" type = "checkbox" onClick="Enable('a4', 'aq4')" > <input style="margin-left: 20px" id="aq4" name = "aq4" type = "number" disabled>
+                                    </p>
+                                </div>
+                                <!-- /.text -->
+                            </div>
+                            <!-- /.product -->
+                        </div>
+
+
+
+
+
+                </div>
+                <!-- /.col-md-9 -->
+
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /#content -->
+
+
+        <!-- *** FOOTER ***
+ _________________________________________________________ -->
+       <div id="footer" data-animate="fadeInUp">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <h4>Swish</h4>
+
+                        <ul>
+                            <li><a href="#">About us</a>
+                            </li>
+                            <li><a href="#">Terms and conditions</a>
+                            </li>
+                            <li><a href="#">FAQ</a>
+                            </li>
+                            <li><a href="#">Contact us</a>
+                            </li>
+                        </ul>
+
+                        <hr class="hidden-md hidden-lg hidden-sm">
+
+                    </div>
+                    <!-- /.col-md-3 -->
+
+                    <div class="col-md-3 col-sm-6">
+
+                        <h4>Stores</h4>
+
+
+                        <ul>
+                            <li><a href="apo-shop.html">Apothecary</a>
+                            </li>
+                            <li><a href="book-shop.html">Flourish and Blotts</a>
+                            </li>
+                            <li><a href="broom1-shop.html">Broomstix</a>
+                            </li>
+                            <li><a href="owl-shop.html">Eeylops' Owl Emporium</a>
+                            </li>
+                            <li><a href="wand-shop.html">Ollivander's</a>
+                            </li>
+                        </ul>
+
+                        <hr class="hidden-md hidden-lg">
+
+                    </div>
+                    <!-- /.col-md-3 -->
+
+                    <div class="col-md-3 col-sm-6">
+
+                        <h4>Where to find us</h4>
+
+                        <p><strong>Hogwarts Castle, </strong>
+                            <br> Scotland,
+                            <strong>Great Britain,</strong>
+                            <br>United Kingdom.
+                            <br>
+                            
+                        </p>
+
+                        <hr class="hidden-md hidden-lg">
+
+                    </div>
+                    <!-- /.col-md-3 -->
+
+
+
+                    <div class="col-md-3 col-sm-6">
+
+
+                        <h4>Stay in touch</h4>
+
+                        <p class="social">
+                            <a href="#" class="facebook external" data-animate-hover="shake"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="twitter external" data-animate-hover="shake"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="instagram external" data-animate-hover="shake"><i class="fa fa-instagram"></i></a>
+                            <a href="#" class="gplus external" data-animate-hover="shake"><i class="fa fa-google-plus"></i></a>
+                            <a href="#" class="email external" data-animate-hover="shake"><i class="fa fa-envelope"></i></a>
+                        </p>
+
+
+                    </div>
+                    <!-- /.col-md-3 -->
+
+                </div>
+                <!-- /.row -->
+
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /#footer -->
+
+        <!-- *** FOOTER END *** -->
+
+
+
+
+        <!-- *** COPYRIGHT ***
+ _________________________________________________________ -->
+        <div id="copyright">
+            <div class="container">
+                <div class="col-md-6">
+                    <p class="pull-left">Copy rights reserved 2017.</p>
+
+                </div>
+                <div class="col-md-6">
+                    <p class="pull-right">Created by Chellzia Sarte</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- *** COPYRIGHT END *** -->
+
+
+
+    </div>
+    <!-- /#all -->
+
+
+    
+
+    <!-- *** SCRIPTS TO INCLUDE ***
+ _________________________________________________________ -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/bootstrap-hover-dropdown.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/front.js"></script>
+
+<script type="text/javascript">function Enable(chbid, txtid)
+{
+    if(document.getElementById(chbid).checked)
+        {
+            document.getElementById(txtid).disabled=false;
+        } 
+    else 
+    {
+        document.getElementById(txtid).disabled=true;
+    }
+}
+</script>
+
+<script>
+        function Receipt(){
+    var total=0.00;
+    var details=" ";
+    var name=prompt("Enter your full name:");
+    var address=prompt("Enter your full address:");
+    if(document.getElementById('a1').checked){
+        var prod1=(143.00 * parseInt(document.getElementById('aq1').value));
+        total+=prod1;
+        details+="<br>Australian Flyabout 50  ";
+    }
+    if(document.getElementById('a2').checked){
+        var prod2=(153.00 * parseInt(document.getElementById('aq2').value));
+        total+=prod2;
+        details+="<br>Firebolt ";
+    }
+    if(document.getElementById('a3').checked){
+        var prod3=(150.00 * parseInt(document.getElementById('aq3').value));
+        total+=prod3;
+        details+="<br>Nimbus 2000";
+    }
+    if(document.getElementById('a4').checked){
+        var prod4=(150.00 * parseInt(document.getElementById('aq4').value));
+        total+=prod4;
+        details+="<br>Nimbus 2001 ";
+    }
+ 
+    
+    do{
+
+        var cash=prompt("Total Bill: "+total+"\nYour Cash: ");
+        var change=parseFloat(cash)-parseFloat(total);
+        if(change < 0){
+            alert("More!!!");
+        }
+    }while(change < 0);
+
+    
+        document.write('<br><font face = "Magik" color = "Gold" size="6"><center>Receipt:<br>');
+        document.write('<font face = "Magic School One" color = "red">Customer Details:<br>');
+        document.write('<font face = "Verdana" color = "black" size = "5" >Name: '+name+'<br>');
+        document.write('Address: '+address+'<br>');
+        document.write('<font face = "Magic School One" color = "red" size = "6">Order Details: <br>');
+        document.write('Product Name: '+details+'<br>' );
+        document.write(' <font face = "Verdana" color = "black" size = "5" >Total Amount: '+total+'<br>');
+        document.write('Cash: '+cash+'<br>');
+        document.write('Change: '+change+'<br>');
+        document.write('<br><br><input type = "button" value = "OK" onClick = "visitPage()" >')
+        
+}
+</script> 
+<script>
+    function visitPage(){
+        window.location='http://localhost/harry/index.html';
+    }
+</script>
+
+
+
+
+</body>
+
+</html>
